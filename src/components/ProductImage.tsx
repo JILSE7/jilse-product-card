@@ -7,9 +7,9 @@ import noImage from '../assets/no-image.jpg';
 
 export const ProductImage = ({img = '', className, style}:IProductImageProps) => {
 
-    const {product:{img:imgContext}} = useContext(ProductContext);
+    const {product} = useContext(ProductContext);
   
     return (
-      <img className={`${styles.productImg} ${className}`} src={(img) ? img : imgContext ?? noImage} alt="Coffe mug" style={style}/>
+      <img className={`${styles.productImg} ${className}`} src={(img) ? img : product.img ?? noImage} alt="Coffe mug" style={style}/>
     )
   }

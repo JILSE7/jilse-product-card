@@ -7,9 +7,9 @@ import { IProductTitleProps } from '../interfaces/ProductInterfaces';
 
 
 export const ProductTitle = ({title = '', className, style}: IProductTitleProps) => {
-    const {product:{nameProduct}} = useContext(ProductContext);
+    const {product} = useContext(ProductContext);
     return (
-      <span className={`${styles.productDescription} ${className}`} style={style}>{title ? title : nameProduct}</span>
+      <span className={`${styles.productDescription} ${className}`} style={style}>{title ? title : product.nameProduct}</span>
     )
   }
   
