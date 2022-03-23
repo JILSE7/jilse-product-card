@@ -13,7 +13,7 @@ const product = {
 const App = () => {
   return (
     <div>
-     <ProductCard product={product} initialValues={{count:4, maxCount:10}}>
+     <ProductCard product={product} initialValues={{count:0, maxCount:10}}>
   {
     ({count,increasyBy,isMaxCountReached,reset}) => {
 

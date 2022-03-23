@@ -14,7 +14,7 @@ export const ProductCard = ({product, children, className, style, onChange, valu
     
   
 
-  const {counter, increasyBy, maxCount, isMaxCountReached, reset} = useCount({onChange, product,value, initialValues})
+  const {counter, increasyBy, maxCount, isMaxCountReached, reset} = useCount({onChange, product,value, initialValues});
 
   return (
     <Provider value={{counter, increasyBy, product, maxCount}}>
